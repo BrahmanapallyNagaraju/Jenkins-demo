@@ -1,5 +1,6 @@
 import sys
 def is_even(num):
+  num = int(num)
   if(num%2==0):
     return true
   return false
