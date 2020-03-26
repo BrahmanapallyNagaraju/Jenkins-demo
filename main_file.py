@@ -6,4 +6,4 @@ def is_even(num):
   return false
 print("Hello world!")
 print("after Integration")
-print("{} is even/odd: {}".format(sys.argv))
+print("{} is even/odd:".format(sys.argv))
