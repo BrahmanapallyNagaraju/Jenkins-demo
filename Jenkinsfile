@@ -16,6 +16,10 @@ def uploadToArtifactory() {
     )
 }
 
+def publichBuildInfo() {
+    rtPublishBuildInfo(serverId: 'Artifactory-1')   
+}
+
 pipeline {
     agent any
     stages {
@@ -39,6 +43,7 @@ pipeline {
         stage ("upload") {
             steps {
                 uploadToArtifactory()
+                publichBuildInfo()
             }
         }
     }
