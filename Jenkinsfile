@@ -4,7 +4,11 @@ def uploadToArtifactory() {
     spec: '''{
           "files": [
             {
-              "pattern": "Jenkins-demo/*/*",
+              "pattern": "Jenkins-demo/Jenkinsfile",
+              "target": "example-artifactory-folder/Jenkins-demo_${BUILD_NUMBER}/"
+            },
+            {
+              "pattern": "Jenkins-demo/main_file.py",
               "target": "example-artifactory-folder/Jenkins-demo_${BUILD_NUMBER}/"
             }
          ]
